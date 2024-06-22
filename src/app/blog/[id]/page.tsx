@@ -14,7 +14,7 @@ export default async function BlogPage({
 
   return (
     <main>
-      <Link href="/">戻る</Link>
+      <Link href="/"><button className="btn bg-green-500">戻る</button></Link>
       <h1 className="text-2xl font-bold my-4">{blog.title}</h1>
       <p>{blog.publishedAt}</p>
       <p>{blog.category && blog.category.name}</p>
