@@ -2,12 +2,12 @@ interface Blog {
   id: string;
   title: string;
   content: string;
-  eyecatch: {
+  eyecatch?: {
     url: string;
     height: number;
     width: number;
   };
-  category: Category;
+  category?: Category;
   createdAt: string;
   updatedAt: string;
   publishedAt: string;

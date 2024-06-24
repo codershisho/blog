@@ -8,6 +8,11 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    domains: ['localhost'], // 画像を置いているドメイン
+  },
+};
 
 export default nextConfig;
