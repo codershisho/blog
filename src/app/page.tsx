@@ -15,44 +15,19 @@ export default async function Home() {
   };
 
   return (
-    <main>
-      <div className="grid grid-cols-3 gap-5 w-4/5 mx-auto">
-        {blogs.map((blog) => (
-          // <div key={blog.id} className="card bg-base-300 shadow-xl image-full flex flex-col">
-          //   <figure><img src={blog.eyecatch?.url} alt="" /></figure>
-          //   <div className="card-body flex-1">
-          //     <h2 className="card-title text-slate-50">{blog.title}</h2>
-          //     <div className="badge badge-lg badge-success p-4">
-          //       <p className="text-slate-100">{blog.category?.name}</p>
-          //     </div>
-          //     <div className="card-actions justify-end">
-          //       <p className="text-slate-200">{toJapanTime(blog.publishedAt)}</p>
-          //       <Link href={`/blog/${blog.id}`}>
-          //         <button className="btn btn-primary text-slate-50">見てみる</button>
-          //       </Link>
-          //     </div>
-          //   </div>
-          // </div>
-          <div key={blog.id} className="card glass w-96">
-            <figure>
-              {blog.eyecatch?.url ? (
-                <img src={blog.eyecatch.url} alt="car!" />
-              ) : (
-                <Image src="/no_image.png" width={384} height={201} alt="no_image" />
-              )}
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">{blog.title}</h2>
-              <div className="badge badge-success p-4 text-white">
-                <p>{blog.category?.name}</p>
-              </div>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary">Read Now!</button>
-              </div>
-            </div>
-          </div>
-        ))}
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="bg-gray-200 p-4">
+        <h2 className="text-2xl font-bold">Welcome</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
-    </main>
+      <div className="bg-gray-200 p-4">
+        <h2 className="text-2xl font-bold">Features</h2>
+        <ul>
+          <li>Feature 1</li>
+          <li>Feature 2</li>
+          <li>Feature 3</li>
+        </ul>
+      </div>
+    </section>
   );
 }

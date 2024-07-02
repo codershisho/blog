@@ -5,6 +5,7 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './node_modules/preline/preline.js',
   ],
   theme: {
     extend: {
@@ -16,10 +17,8 @@ const config: Config = {
     },
   },
   plugins: [
-    require('daisyui'),
+    require('preline/plugin'),
+    require('tailwindcss-animated')
   ],
-  daisyui: {
-    themes: ["emerald"],
-  }
 };
 export default config;
