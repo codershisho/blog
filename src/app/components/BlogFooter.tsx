@@ -1,5 +1,4 @@
-import { NextPage } from "next";
-
+import { NextPage } from 'next'
 
 const BlogFooter: NextPage = () => {
   return (

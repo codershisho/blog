@@ -1,10 +1,7 @@
-import { NextPage } from "next";
-
+import { NextPage } from 'next'
 
 const Contact: NextPage = () => {
-  return (
-    <div>Contact</div>
-  )
+  return <div>Contact</div>
 }
 
 export default Contact
