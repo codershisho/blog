@@ -13,6 +13,10 @@ const nextConfig = {
   images: {
     domains: ['localhost'], // 画像を置いているドメイン
   },
+  env: {
+    SERVICE_DOMAIN: process.env.SERVICE_DOMAIN,
+    API_KEY: process.env.API_KEY,
+  }
 };
 
 export default nextConfig;
