@@ -40,7 +40,7 @@ const BlogList: React.FC<Props> = ({ blogs }) => {
 
   return (
     <div>
-      <div className="grid grid-cols-1 gap-4 px-5 md:grid-cols-2 md:gap-5 lg:grid-cols-2 lg:gap-8 lg:px-24 xl:grid-cols-3 xl:px-44">
+      <div className="grid grid-cols-1 w-5/6 mx-auto gap-5 md:grid-cols-2 md:gap-10 lg:grid-cols-2 lg:gap-8 xl:grid-cols-3 xl:w-7/12">
         {selectedBlogs.map((blog) => (
           <Link key={blog.id} href={`/blog/${blog.id}`}>
             <div className="flex bg-white border rounded-xl h-full hover:shadow-2xl hover:shadow-amber-200 lg:w-11/12">
