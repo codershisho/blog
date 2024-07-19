@@ -11,7 +11,7 @@ const BlogHeader: NextPage = () => {
         <div className="flex items-center justify-between">
           <a
             className="flex-none text-white font-semibold text-base md:text-lg lg:text-2xl"
-            href="/"
+            href="/blogs"
           >
             Codershishoの成長記録
           </a>
@@ -62,14 +62,14 @@ const BlogHeader: NextPage = () => {
           className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block"
         >
           <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-            <Link href="/">
+            {/* <Link href="/">
               <div
                 className="font-base font-extrabold text-slate-100 hover:underline md:text-lg"
                 aria-current="page"
               >
                 Landing
               </div>
-            </Link>
+            </Link> */}
             <Link href="/blogs">
               <div className="font-base font-extrabold text-slate-100 hover:underline md:text-lg">
                 Blog

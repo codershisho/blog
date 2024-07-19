@@ -32,8 +32,10 @@ export default async function BlogPage({
             一覧へ戻る
           </button>
         </Link>
-        <h1 className="text-base font-bold my-4 md:text-2xl">{blog.title}</h1>
-        <p className="text-xs font-semibold text-right md:text-base">
+        <h1 className="text-base font-bold my-4 text-gray-500 md:text-2xl">
+          {blog.title}
+        </h1>
+        <p className="text-xs font-semibold text-right text-gray-500 md:text-base">
           {toJapanTime(blog.publishedAt)}
         </p>
         {/* <p>{blog.category && blog.category.name}</p> */}
