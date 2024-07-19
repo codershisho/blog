@@ -1,4 +1,5 @@
 import { adventPro, libreBaskerville, notoJP } from '@/utils/font'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import type { Metadata } from 'next'
 import BlogFooter from './components/BlogFooter'
 import BlogHeader from './components/BlogHeader'
@@ -34,6 +35,7 @@ export default function RootLayout({
         </div>
       </body>
       <PrelineScript />
+      <GoogleAnalytics gaId={`${process.env.NEXT_PUBLIC_GA_ID}`} />
     </html>
   )
 }

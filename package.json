@@ -18,6 +18,7 @@
     "fix:prettier": "npm run lint:prettier -- --write"
   },
   "dependencies": {
+    "@next/third-parties": "^14.2.5",
     "@preline/collapse": "^2.3.0",
     "microcms-js-sdk": "^3.1.1",
     "next": "14.1.0",
