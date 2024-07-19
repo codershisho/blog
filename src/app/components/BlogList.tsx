@@ -17,7 +17,8 @@ interface Props {
 
 const BlogList: React.FC<Props> = ({ blogs }) => {
   const totalItems = blogs.length
-  const itemsPerPage = 3
+  // 1ページの表示件数
+  const itemsPerPage = 20
   const totalPages = Math.ceil(totalItems / itemsPerPage)
   const [currentPage, setCurrentPage] = useState(1)
   const handlePageChange = (page: number) => {

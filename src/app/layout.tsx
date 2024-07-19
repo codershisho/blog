@@ -6,8 +6,9 @@ import PrelineScript from './components/PrelineScript'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Blog',
-  description: 'blog',
+  title: 'Codershishoの成長記録',
+  description:
+    '日々エンジニアとして得たこと、Web開発で得た知見、備忘録、雑記…etcを綴っていきくブログ',
 }
 
 export default function RootLayout({
