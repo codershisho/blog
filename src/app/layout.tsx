@@ -19,6 +19,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" data-theme="emerald">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="2paoRE281-1XqeFQgbSjpTVtEGxlXBNAuEMTpH71V8w"
+        />
+      </head>
       <body
         className={`${notoJP.variable} ${adventPro.variable} ${libreBaskerville.variable} ${notoJP.className}`}
       >
