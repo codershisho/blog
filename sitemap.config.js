@@ -3,5 +3,5 @@ module.exports = {
   generateRobotsTxt: true,
   generateIndexSitemap: false,
   sitemapSize: 7000, // 大きなサイトマップになる場合のファイル分割行う閾値
-  outDir: '.vercel/output/static', // 出力先ディレクトリ
+  outDir: './out', // 出力先ディレクトリ
 }
